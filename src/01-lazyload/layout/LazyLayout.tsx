@@ -21,7 +21,7 @@ export const LazyLayout = () => {
                 <Route path='lazy1' element={<LazyPage1 />} />
                 <Route path='lazy2' element={<LazyPage2 />} />
                 <Route path='lazy3' element={<LazyPage3 />} />
-                <Route path="*" element={<Navigate to="/lazy1" replace />} />
+                <Route path="*" element={<Navigate replace to="lazy1" />} />
             </Routes>
         </div>
     )
